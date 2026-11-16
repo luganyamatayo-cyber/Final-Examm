@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenRoots Initiative | Planting Tomorrow</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+<header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">Green<span>Roots</span></a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="get-involved.html" class="btn btn-primary desktop-only">Join Us</a>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Planting Trees.<br>Growing Hope.</h1>
+      <p>We restore forests, educate communities, and fight climate change — one tree at a time.</p>
+      <div class="hero-buttons">
+        <a href="get-involved.html" class="btn btn-primary">Get Involved</a>
+        <a href="impact.html" class="btn btn-outline">See Our Impact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="mission-text">
+          <h2>Our Mission</h2>
+          <p>GreenRoots Initiative is dedicated to restoring degraded lands through large-scale tree planting, empowering local communities with climate education, and building a greener future for generations to come.</p>
+          <a href="about.html" class="text-link">Learn more about us →</a>
+        </div>
+        <div class="mission-stats">
+          <div class="stat">
+            <h3>2.4M+</h3>
+            <p>Trees Planted</p>
+          </div>
+          <div class="stat">
+            <h3>180+</h3>
+            <p>Communities Reached</p>
+          </div>
+          <div class="stat">
+            <h3>45,000</h3>
+            <p>Volunteers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Preview -->
+  <section class="programs-preview">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We Do</h2>
+        <p>Three core programs driving real change</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🌳</div>
+          <h3>Tree Planting</h3>
+          <p>We plant native trees in degraded areas to restore ecosystems and fight deforestation.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <h3>Climate Education</h3>
+          <p>Workshops and school programs that teach communities how to protect the environment.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Community Projects</h3>
+          <p>We partner with local groups to create sustainable livelihoods through green initiatives.</p>
+        </div>
+      </div>
+      <div class="center">
+        <a href="programs.html" class="btn btn-primary">View All Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to make a difference?</h2>
+      <p>Join thousands of people planting a better future.</p>
+      <a href="get-involved.html" class="btn btn-light">Join GreenRoots Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Green<span>Roots</span></a>
+        <p>Restoring the planet, one tree at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Contact Form</a></li>
+          <li>lugaayamathew@gmail.com</li>
+          <li>+256 744 449 088</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 GreenRoots Initiative. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+</script>
+</body>
+
+</html>
