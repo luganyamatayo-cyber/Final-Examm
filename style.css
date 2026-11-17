@@ -1093,3 +1093,28 @@ footer {
     margin: 0 auto;
   }
 }
+
+/* ========== SOCIAL ICONS ========== */
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  background: #2e7d32;
+  transform: translateY(-3px);
+}
