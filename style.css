@@ -1274,3 +1274,58 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+/* ========== WHAT'S UP SECTION ========== */
+.whats-up {
+  padding: 100px 0;
+  background: #f8fbf8;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.update-card {
+  background: white;
+  padding: 32px 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.update-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.08);
+}
+
+.update-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.update-card h3 {
+  font-size: 1.25rem;
+  color: #1b5e20;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.update-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .updates-grid {
+    grid-template-columns: 1fr;
+  }
+}
