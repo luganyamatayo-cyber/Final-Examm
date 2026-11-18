@@ -34,13 +34,31 @@
     </div>
   </header>
 
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <h1>News & Updates</h1>
-      <p>Stay informed about our latest work and impact</p>
+  <section class="video-hero">
+  <!-- Background Motion Video -->
+  <video autoplay muted loop playsinline poster="launch.jpg" class="hero-video">
+    <source src="tree-planting-motion.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Dark Green Overlay for Readability -->
+  <div class="video-overlay"></div>
+
+  <!-- Animated Words -->
+  <div class="container video-hero-content">
+    <span class="badge-anim">GreenRoots Initiative</span>
+    <h1 class="title-anim">
+      Growing <span class="highlight-word" id="rotatingWord">Hope</span> Together
+    </h1>
+    <p class="subtitle-anim">
+      Watch our community in action as we restore hillsides, empower local nurseries, and educate the next generation.
+    </p>
+    <div class="hero-actions-anim">
+      <a href="get-involved.html" class="btn btn-primary">Join a Planting Day</a>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- News Section -->
   <section class="news-page">
@@ -189,6 +207,26 @@
       hamburger.classList.toggle('active');
     });
   </script>
+
+  <script>
+  const words = ["Hope", "Forests", "Communities", "Change"];
+  let wordIndex = 0;
+  const rotatingWord = document.getElementById("rotatingWord");
+
+  setInterval(() => {
+    rotatingWord.style.opacity = 0;
+    rotatingWord.style.transform = "translateY(-10px)";
+
+    setTimeout(() => {
+      wordIndex = (wordIndex + 1) % words.length;
+      rotatingWord.textContent = words[wordIndex];
+      rotatingWord.style.transform = "translateY(10px)";
+      rotatingWord.style.opacity = 1;
+      rotatingWord.style.transform = "translateY(0)";
+    }, 400);
+  }, 2800);
+</script>
+
 
 </body>
 </html>
