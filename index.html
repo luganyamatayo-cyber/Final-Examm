@@ -38,17 +38,22 @@
   </div>
 </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>Planting Trees.<br>Growing Hope.</h1>
-      <p>We restore forests, educate communities, and fight climate change — one tree at a time.</p>
-      <div class="hero-buttons">
-        <a href="get-involved.html" class="btn btn-primary">Get Involved</a>
-        <a href="impact.html" class="btn btn-outline">See Our Impact</a>
-      </div>
+  <!-- Hero Section with Video -->
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="https://videos.pexels.com/video-files/3209211/3209211-uhd_2560_1440_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <h1>Planting Trees.<br>Growing Hope.</h1>
+    <p>We restore forests, educate communities, and fight climate change — one tree at a time.</p>
+    <div class="hero-buttons">
+      <a href="get-involved.html" class="btn btn-primary">Get Involved</a>
+      <a href="impact.html" class="btn btn-outline">See Our Impact</a>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Mission Section -->
   <section class="mission">
@@ -206,6 +211,24 @@
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('active');
+  });
+</script>
+
+<script>
+  // Simple scroll animation
+  const fadeElements = document.querySelectorAll('.section-header, .card, .update-card, .mission-text, .stat');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  fadeElements.forEach(el => {
+    el.classList.add('fade-in');
+    observer.observe(el);
   });
 </script>
 </body>
